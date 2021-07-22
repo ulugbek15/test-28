@@ -1,7 +1,37 @@
-h1{
-    background-color: black;
-    color: gold;
+.menu{
+    list-style-type: none;
+    display: flex;
 }
-body{
-    background-color: skyblue;
+nav{
+    position: relative;
+    background-color: gold;
+}
+.menu__item{
+    border-right: 3px solid #000;
+}
+.menu__item:last-child{
+    border-right: none;
+}
+.menu__link{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+.mega_menu{
+    position: absolute;
+    overflow: auto;
+    /* width: 100%; */
+    display: none;
+    flex-wrap: wrap;
+    left: 0;
+    right: 0;
+    height: 500px;
+    background-color:aqua;
+}
+.active:hover .mega_menu{
+    display: flex;
+}
+.mega_menu ul{
+    width: 300px;
 }
